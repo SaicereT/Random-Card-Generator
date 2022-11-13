@@ -12,17 +12,47 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body class=" bg-success">
+    <div class="container-fluid">
+      <div class="card d-flex flex-column">
+        <div id="topSuit" class="topsuit d-flex justify-content-start mx-2">
+          ♠
+        </div>
+        <div id="cardNum" class="number d-flex justify-content-center my-5">
+          A
+        </div>
+        <div id="botSuit" class="botsuit d-flex justify-content-start mx-2">
+          ♠
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-flex justify-content-center">
+          <button id="newCard" type="button" class="btn btn-dark w-50">
+            New Card
+          </button>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+          <div class="input-group my-3 w-50">
+            <span class="input-group-text" id="basic-addon1">Height</span>
+            <input
+              id="height"
+              type="text"
+              class="form-control"
+              placeholder="Height"
+              aria-label="Height"
+              aria-describedby="basic-addon1"
+            />
+            <span class="input-group-text ms-2" id="basic-addon1">Width</span>
+            <input
+              id="width"
+              type="text"
+              class="form-control"
+              placeholder="Width"
+              aria-label="Width"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </body>
